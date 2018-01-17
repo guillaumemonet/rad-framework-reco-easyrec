@@ -1,0 +1,22 @@
+{
+    "services": {
+        "reco": {
+            "default": "easyrec",
+            "classname": "Rad\\Reco\\RecoInterface",
+            "handlers": {
+                "easyrec": {
+                    "classname": "Rad\\Reco\\EasyRecRecoHandler",
+                    "config": {
+                        "host": "http://localhost/",
+                        "url": "/api/1.1",
+                        "key": "yourprivatekey",
+                        "tenant_id": "TENANTID",
+                        "operator_login": "login",
+                        "operator_password": "password",
+                        "accept_type": "json"
+                    }
+                }
+            }
+        }
+    }
+}
