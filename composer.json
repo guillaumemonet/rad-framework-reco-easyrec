@@ -36,5 +36,13 @@
     ],
     "require": {
         "rad/rad-framework": "dev-master"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Rad\\Composer\\Manager::installConfig"
+        ],
+        "post-update-cmd": [
+            "Rad\\Composer\\Manager::installConfig"
+        ]
     }
 }
